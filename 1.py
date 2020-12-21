@@ -1,3 +1,5 @@
+# PART 1
+
 input = open(main_folder + "1.txt").read()
 input = input.split("\n")
 input = list(map(int, input))
@@ -12,6 +14,8 @@ for i in range(len(input)):
 print("Product:", input[I] * input[J])
 
 ###################################################################################################
+
+# PART 2
 
 # The same idea as before
 I, J, K = -1, -1, -1
