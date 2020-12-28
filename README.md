@@ -21,7 +21,7 @@ After reading the problem, the solution is straigthforward. Some minor preproces
 ### --- Day 4: Passport Processing ---
 
 **Part 1-2:**
-Reading this problem reminded me of [Papers, please!](https://www.youtube.com/watch?v=6RHH7M4siPM&t=5m6s&ab_channel=GameMaker%27sToolkit). The solution is to get good structure for the passports and then checking each one against the rules. I was not an interesting problem, because no logic or thinking was needed to solve it.
+Reading this problem reminded me of [Papers, please!](https://www.youtube.com/watch?v=6RHH7M4siPM&t=5m6s&ab_channel=GameMaker%27sToolkit). The solution is to get good structure for the passports and then checking each one against the rules. This was not an interesting problem, because no logic or thinking was needed to solve it.
 
 ### --- Day 5: Binary Boarding ---
 
