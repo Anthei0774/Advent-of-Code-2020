@@ -17,3 +17,8 @@ Still an easy problem to solve. After some minor formatting on the input, the Pa
 
 **Part 1-2:**
 After reading the problem, the solution is straigthforward. Some minor preprocessing on the forest representation makes the rest of the code more simple. One loop on the rows defined with index *i* increments an other *j* index with *3*, and whenever *j* reaches the right side, I set it to *0*, as the forest-patters repeats horizontally. Part 2 is the previous process executed over all trajectories given.
+
+### --- Day 4: Passport Processing ---
+
+**Part 1-2:**
+Reading this problem reminded me of [Papers, please!](http://www.youtube.com/watch?v=6RHH7M4siPM&t=5m6s). The solution is to get good structure for the passports and then checking each one against the rules. I was not an interesting problem, because no logic or thinking was needed to solve it.
