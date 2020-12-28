@@ -1,6 +1,6 @@
 # PART 1
 
-input = open(main_folder + "2.txt").read()
+input = open("2.txt").read()
 input = input.split("\n")
 
 for i in range(len(input)):
