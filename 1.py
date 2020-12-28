@@ -1,6 +1,6 @@
 # PART 1
 
-input = open(main_folder + "1.txt").read()
+input = open("1.txt").read()
 input = input.split("\n")
 input = list(map(int, input))
 
