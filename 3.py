@@ -1,5 +1,5 @@
 # Preprocessing
-input = open(main_folder + "3.txt").read()
+input = open("3.txt").read()
 input = input.replace(".", "0")
 input = input.replace("#", "1")
 input = input.split("\n")
