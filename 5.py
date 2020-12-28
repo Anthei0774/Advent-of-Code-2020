@@ -1,6 +1,6 @@
 # Preprocesing
 
-input = open(main_folder + "5.txt").read()
+input = open("5.txt").read()
 input = input.split("\n")
 for i in range(len(input)):
     input[i] = input[i].replace("F", "0").replace("B", "1").replace("L", "0").replace("R", "1")
