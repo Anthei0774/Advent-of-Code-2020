@@ -22,3 +22,8 @@ After reading the problem, the solution is straigthforward. Some minor preproces
 
 **Part 1-2:**
 Reading this problem reminded me of [Papers, please!](http://www.youtube.com/watch?v=6RHH7M4siPM&t=5m6s). The solution is to get good structure for the passports and then checking each one against the rules. I was not an interesting problem, because no logic or thinking was needed to solve it.
+
+### --- Day 5: Binary Boarding ---
+
+**Part 1-2:**
+A lesson that I took in heart during my bachelor years at the university is when a problem/theorem/etc. has a short description, then it's either way too easy or the exact opposite, way too hard. An example for the former would be this problem, and for the latter would be Caratheodory's theorem: "every quasi-measure can be extended to a measure", with its proof expanding more than 5 pages.
