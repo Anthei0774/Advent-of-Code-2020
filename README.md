@@ -16,7 +16,7 @@ Still an easy problem to solve. After some minor formatting on the input, the Pa
 ### --- Day 3: Toboggan Trajectory ---
 
 **Part 1-2:**
-After reading the problem, the solution is straigthforward. Some minor preprocessing on the forest representation makes the rest of the code more simple. One loop on the rows defined with index *i* increments an other *j* index with *3*, and whenever *j* reaches the right side, I set it to *0*, as the forest-patters repeats horizontally. Part 2 is the previous process executed over all trajectories given.
+After reading the problem, the solution is straigthforward. Some minor preprocessing on the forest representation makes the rest of the code more simple. One loop on the rows defined with index *i* increments an other *j* index with *3*, and whenever *j* reaches the right side, I set it to *0*, as the forest-pattern repeats horizontally. Part 2 is the previous process executed over all trajectories given.
 
 ### --- Day 4: Passport Processing ---
 
