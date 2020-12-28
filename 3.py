@@ -1,39 +1,57 @@
-input = open(main_folder + "3.txt").read()
-input = input.split("\n")
+# Part 1
 
-trees_hit = 0
+# Preprocessing
+input = open(main_folder + "3.txt").read()
+input = input.replace(".", "0")
+input = input.replace("#", "1")
+input = input.split("\n")
+for i in range(len(input)):
+    input[i] = list(input[i])
+    input[i] = list(map(int, input[i]))
+
+T = 0
+
+# One loop is enough for a trajectory
 j = 0
 for i in range(len(input)):
 
+    # Forest-pattern repeats horizontally
     if len(input[i]) <= j:
         j = j % len(input[i])
 
-    if input[i][j] == "#":
-        trees_hit += 1
-    
+    T += input[i][j]
     j += 3
 
-print("Trees hit:", trees_hit)
+print("Trees hit:", T)
 
 ###################################################################################################
 
-steps = [ {"r" : 1, "d" : 1}, {"r" : 3, "d" : 1}, {"r" : 5, "d" : 1}, {"r" : 7, "d" : 1}, {"r" : 1, "d" : 2} ]
+# Part 2
 
-product = 1
+# Trajectories
+steps = [ {"R" : 1, "D" : 1},
+          {"R" : 3, "D" : 1},
+          {"R" : 5, "D" : 1},
+          {"R" : 7, "D" : 1},
+          {"R" : 1, "D" : 2} ]
+
+# Init product and iterating through the planned trajectories
+P = 1
 for step in steps:
 
+    # Same process as in Part 1
     j = 0
-    trees_hit = 0
-    for i in range(0, len(input), step["d"]):
+    T = 0
+    for i in range(0, len(input), step["D"]):
 
         if len(input[i]) <= j:
             j = j % len(input[i])
 
-        if input[i][j] == "#":
-            trees_hit += 1
+        T += input[i][j]
+        j += step["R"]
 
-        j += step["r"]
+    # Product is multiplied with current-trees-hit result
+    P *= T
+    print("Trees hit with step", step, ":", T)
 
-    product *= trees_hit
-
-print("Trajectories trees-hit-product:", product)
+print("Trajectories trees-hit-product:", P)
