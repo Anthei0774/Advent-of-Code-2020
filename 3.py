@@ -1,5 +1,3 @@
-# Part 1
-
 # Preprocessing
 input = open(main_folder + "3.txt").read()
 input = input.replace(".", "0")
@@ -9,6 +7,10 @@ for i in range(len(input)):
     input[i] = list(input[i])
     input[i] = list(map(int, input[i]))
 
+###################################################################################################        
+
+# Part 1
+    
 T = 0
 
 # One loop is enough for a trajectory
